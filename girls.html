@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="girls.css">
+</head>
+<body>
+    <script src="script.js"></script>
+   <header>
+    <div class="navbar">
+        <div class="nav-logo border">
+            <div class="logo"></div>
+        </div>
+       
+        <div class="nav-address border">
+            <p class="add-first">Deliver to</p>
+            <div class="add-icon">
+                <i class="fa-solid fa-location-dot"></i>
+                <p class="add-second">India</p>
+            </div>
+        </div>
+        
+        <div class="nav-search">
+            <select class="search-select">
+                <option><a href="index.html">All</a></option>
+                <option>Deals</option>
+                <option>Digital Music</option>
+                <option>Electronics</option>
+                <option>Girl's Fashion</option>
+                <option>Health & Kitchen</option>
+                <option>Home & Kitchen</option>
+                <option>Luggage</option>
+                <option>Men's Fashion</option>
+            </select>
+            <input type="text" placeholder="search Amazon" id="search-input" class="search-input">
+            <button class="search-input-click" onclick="search()" style="background-color: #febd68; height: 40px;"><div class="search-icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div></button>
+            
+        </div>
+        
+        <div class="nav-signgin border">
+            <p><span>Hello,sign in</span></p>
+            <p class="nav-second">Account & Lists</p>
+        </div>
+        
+        <div class="nav-return border">
+            <p><span>Returns</span></p>
+            <p class="nav-second">& Orders</p>
+        </div>
+        
+        <div class="nav-cart border">
+            <i class="fa-solid fa-cart-shopping"></i>
+            cart
+        </div>
+    </div>
+    
+    <div class="panel">
+        <div class="panel-all" class="panel-ops-chiled">
+            <i class="fa-solid fa-bars"></i>
+            All
+        </div>
+        <div class="panel-ops">
+            <p class="panel-ops-chiled">Today's Deals</p>
+               <p class="panel-ops-chiled">Customer Service</p>
+               <p class="panel-ops-chiled">Registry</p>
+               <p class="panel-ops-chiled">Gift Cards</p>
+                <p class="panel-ops-chiled">Sell</p>
+        </div>
+        <div class="panel-deals">
+            Shop deals in Electronics
+        </div>
+    </div>
+</header>
+
+<!-- <div class="hero-section">
+    <div class="hero-msg">
+        <p>you are on amazon.com. You can also shop on Amazon India for millions of products with fast local delivery. <a>Click here to go to amazon.in</a></p>
+    </div>
+</div> -->
+
+<div class="shop-section">
+    <div class="box">
+        <div class="box-content">
+            <!-- <h2>Cloths</h2> -->
+            <div class="box-img" style="background-image: url('girlsItem1.jpg');"></div>
+            <h3>The Children's Place</h3>
+            <p>Girls Basic Denim Jacket</p>
+            <p>INR <h2>1379<sup>59</sup></h2></p>
+            <p>Delivery <b>Wed, Jun 19</b></p>
+            <p>Ships to India</p>
+    </div>
+</div>
+    <div class="box">
+        <div class="box-content">
+            <!-- <h2>Health & Personal Care</h2> -->
+            <div class="box-img" style="background-image: url('girlsImage2.jpg');"></div>
+            <h3>Arshiner</h3>
+            <p>Girls Short Set 2 Pices Outfits Short Sleeve Tie Knot T-Shirts</p>
+            <p>INR <h2>1395<sup>58</sup></h2></p>
+            <p>Ships to India</p>
+        </div>
+    </div>
+    <div class="box">
+        <div class="box-content">
+            <!-- <h2>Furniture</h2> -->
+            <div class="box-img" style="background-image: url('girlsImage3.jpg');"></div>
+            <h3>I IHAYNER</h3>
+            <p>Girls Fashion Backpack Mini Backpack purse for women</p>
+            <p>INR <h2>1661<sup>33</sup></h2></p>
+            <p>Ships to India</p>
+        </div>
+    </div>
+    <div class="box">
+        <div class="box-content">
+            <!-- <h2>Electronics</h2> -->
+            <div class="box-img" style="background-image: url('girlsImage4.jpg');"></div>
+            <h3>PATPAT</h3>
+            <p>Girls Short for family matching outfit mommy</p>
+            <p>INR <h2>1395<sup>58</sup></h2></p>
+            <p>Ships to India</p>
+        </div>
+    </div>
+    <div class="box">
+        <div class="box-content">
+            <!-- <h2>Beauty Picks</h2> -->
+            <div class="box-img" style="background-image: url('girlsImage5.jpg');"></div>
+            <!-- <p>See more</p> -->
+            <h3>blibean</h3>
+            <p>Girls Short Set 2 Pices Outfits Short Sleeve Tie Knot T-Shirts</p>
+            <p>INR <h2>1395<sup>58</sup></h2></p>
+            <p>Ships to India</p>
+    </div>
+</div>
+    <div class="box">
+        <div class="box-content">
+            <!-- <h2>Pet Care</h2> -->
+            <div class="box-img" style="background-image: url('girlsImage6.jpg');"></div>
+            <!-- <p>See more</p> -->
+            <h3>frock</h3>
+            <p>Girls Short Set 2 Pices Outfits Short Sleeve Tie Knot frocks</p>
+            <p>INR <h2>1395<sup>58</sup></h2></p>
+            <p>Ships to India</p>
+        </div>
+    </div>
+    <div class="box">
+        <div class="box-content">
+            <!-- <h2>New Arrival in Toys</h2> -->
+            <div class="box-img" style="background-image: url('girlsImage7.jpg');"></div>
+            <!-- <p>See more</p> -->
+            <h3>Skart</h3>
+            <p>Girls Basic Denim Skart</p>
+            <p>INR <h2>1234<sup>52</sup></h2></p>
+            <p>Ships to India</p>
+        </div>
+    </div>
+    <div class="box">
+        <div class="box-content">
+            <div class="box-img" style="background-image: url('girlsImage8.jpg');"></div>
+            <h3>Girls shoes</h3>
+            <p>Girls Fasion Shoes</p>
+            <p>INR <h2>1295<sup>42</sup></h2></p>
+            <p>Ships to India</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="foot-panel1">
+        Back to Top
+    </div>
+
+    <div class="foot-panel2">
+        <ul>
+            <p>Get to Know Us</p>
+            <a>careers</a>
+            <a>Blog</a>
+            <a>About Amazon</a>
+            <a>Investor Relations</a>
+            <a>Amazon Devices</a>
+            <a>Amazon Science</a>
+        </ul>
+        <ul>
+            <p>Get to Know Us</p>
+            <a>careers</a>
+            <a>Blog</a>
+            <a>About Amazon</a>
+            <a>Investor Relations</a>
+            <a>Amazon Devices</a>
+            <a>Amazon Science</a>
+        </ul>
+        <ul>
+            <p>Get to Know Us</p>
+            <a>careers</a>
+            <a>Blog</a>
+            <a>About Amazon</a>
+            <a>Investor Relations</a>
+            <a>Amazon Devices</a>
+            <a>Amazon Science</a>
+        </ul>
+        <ul>
+            <p>Get to Know Us</p>
+            <a>careers</a>
+            <a>Blog</a>
+            <a>About Amazon</a>
+            <a>Investor Relations</a>
+            <a>Amazon Devices</a>
+            <a>Amazon Science</a>
+        </ul>
+    </div>
+
+    <div class="foot-panel3">
+        <div class="logo"></div>
+    </div>
+
+    <div class="foot-panel4">
+        <div class="pages">
+            <a>Conditions of Use</a>
+            <a>Privacy Notice</a>
+            <a>Your Ads Privacy Choices</a>
+        </div>
+        <div class="copyright">
+            © 1996-2023, Amazon.com, Inc. or its affiliates
+        </div>
+    </div>
+</footer>
+</body>
+</html>
